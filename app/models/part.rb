@@ -1,4 +1,4 @@
 class Part < ActiveRecord::Base
   belongs_to :cars
-  belongs_to :components
+  has_many :components
 end

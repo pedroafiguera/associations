@@ -1,4 +1,4 @@
 class Component < ActiveRecord::Base
-  has_many :parts
-  has_many :cars, through: :parts
+  belongs_to :part
+  belongs_to :car
 end
